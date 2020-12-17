@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: sifive/freedom-e-sdk-ci-segger-libc
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.X_GITHUB_PERSONAL_ACCESS_TOKEN }}
           path: freedom-e-sdk/segger-libc
 
       - name: 'Checkout submodules'
