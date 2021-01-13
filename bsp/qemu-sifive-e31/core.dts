@@ -200,5 +200,13 @@
                         gpios = <&gpio0 21>;
                         linux,default-trigger = "none";
                 };
+                remapper: remapper@3000000 {
+                        compatible = "sifive,remapper2";
+                        reg = <0x3000000 0x1000>;
+                        reg-names = "control";
+                        sifive,remapper-cpu = <&L6>;
+                        sifive,remapper-entries = <32>;
+                        sifive,remapper-version = <2>;
+                };
         };
 };
